@@ -9,7 +9,6 @@
 import UIKit
 
 final class WaetherViewController: UIViewController {
-
     // MARK: - Public properties -
 
     var presenter: WaetherPresenterInterface!
@@ -19,10 +18,8 @@ final class WaetherViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
 }
 
 // MARK: - Extensions -
 
-extension WaetherViewController: WaetherViewInterface {
-}
+extension WaetherViewController: WaetherViewInterface {}

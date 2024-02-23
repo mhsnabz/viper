@@ -6,8 +6,6 @@
 //
 
 import Foundation
-protocol PresenterInterface: AnyObject {
-}
+protocol PresenterInterface: AnyObject {}
 
-extension PresenterInterface {
-}
+extension PresenterInterface {}

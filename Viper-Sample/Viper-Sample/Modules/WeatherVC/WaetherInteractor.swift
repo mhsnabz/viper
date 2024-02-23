@@ -8,10 +8,8 @@
 
 import Foundation
 
-final class WaetherInteractor {
-}
+final class WaetherInteractor {}
 
 // MARK: - Extensions -
 
-extension WaetherInteractor: WaetherInteractorInterface {
-}
+extension WaetherInteractor: WaetherInteractorInterface {}

@@ -9,7 +9,6 @@
 import UIKit
 
 final class WaetherWireframe: BaseWireframe<WaetherViewController> {
-
     // MARK: - Module setup -
 
     init() {
@@ -21,10 +20,8 @@ final class WaetherWireframe: BaseWireframe<WaetherViewController> {
         let presenter = WaetherPresenter(view: moduleViewController, formatter: formatter, interactor: interactor, wireframe: self)
         moduleViewController.presenter = presenter
     }
-
 }
 
 // MARK: - Extensions -
 
-extension WaetherWireframe: WaetherWireframeInterface {
-}
+extension WaetherWireframe: WaetherWireframeInterface {}

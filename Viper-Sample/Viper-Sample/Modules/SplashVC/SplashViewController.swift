@@ -6,12 +6,11 @@
 //
 //
 
-import UIKit
 import CoreLocation
+import UIKit
 
 /// View controller responsible for displaying the splash screen.
 final class SplashViewController: UIViewController {
-
     // MARK: - Public properties -
 
     /// Presenter responsible for handling interactions and business logic for the splash screen.
@@ -24,12 +23,10 @@ final class SplashViewController: UIViewController {
         // Call the presenter to fetch the user's location when the view loads
         presenter.getLocation()
     }
-
 }
 
 // MARK: - Extensions -
 
 /// Extension conforming to the `SplashViewInterface` protocol,
 /// providing necessary methods for interacting with the splash view.
-extension SplashViewController: SplashViewInterface {
-}
+extension SplashViewController: SplashViewInterface {}

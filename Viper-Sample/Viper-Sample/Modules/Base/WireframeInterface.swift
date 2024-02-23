@@ -6,9 +6,7 @@
 //
 import UIKit
 
-protocol WireframeInterface: AnyObject {
-}
-
+protocol WireframeInterface: AnyObject {}
 
 /// Base class for wireframes, responsible for managing view controllers in the VIPER architecture.
 ///
@@ -18,7 +16,6 @@ protocol WireframeInterface: AnyObject {
 /// by temporarily storing it in the `temporaryStoredViewController` property.
 /// After the first access, the `_viewController` property is set to `nil` to break the reference cycle.
 class BaseWireframe<ViewController> where ViewController: UIViewController {
-
     private weak var _viewController: ViewController?
 
     // We need it in order to retain the view controller reference upon first access
@@ -31,11 +28,9 @@ class BaseWireframe<ViewController> where ViewController: UIViewController {
         temporaryStoredViewController = viewController
         _viewController = viewController
     }
-
 }
 
 extension BaseWireframe {
-
     /// Returns the view controller associated with the wireframe.
     ///
     /// If the view controller is deallocated, accessing this property will raise a fatal error,
@@ -65,11 +60,9 @@ extension BaseWireframe {
     var navigationController: UINavigationController? {
         return viewController.navigationController
     }
-
 }
 
 extension UIViewController {
-
     /// Presents the view controller associated with the specified wireframe.
     ///
     /// - Parameters:
@@ -81,11 +74,9 @@ extension UIViewController {
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: animated, completion: completion)
     }
-
 }
 
 extension UINavigationController {
-
     /// Pushes the view controller associated with the specified wireframe onto the navigation stack.
     ///
     /// - Parameters:
@@ -103,5 +94,4 @@ extension UINavigationController {
     func setRootWireframe<ViewController>(_ wireframe: BaseWireframe<ViewController>, animated: Bool = true) {
         setViewControllers([wireframe.viewController], animated: animated)
     }
-
 }

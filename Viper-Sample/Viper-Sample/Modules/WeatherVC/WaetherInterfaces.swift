@@ -8,17 +8,12 @@
 
 import UIKit
 
-protocol WaetherWireframeInterface: WireframeInterface {
-}
+protocol WaetherWireframeInterface: WireframeInterface {}
 
-protocol WaetherViewInterface: ViewInterface {
-}
+protocol WaetherViewInterface: ViewInterface {}
 
-protocol WaetherPresenterInterface: PresenterInterface {
-}
+protocol WaetherPresenterInterface: PresenterInterface {}
 
-protocol WaetherFormatterInterface: FormatterInterface {
-}
+protocol WaetherFormatterInterface: FormatterInterface {}
 
-protocol WaetherInteractorInterface: InteractorInterface {
-}
+protocol WaetherInteractorInterface: InteractorInterface {}

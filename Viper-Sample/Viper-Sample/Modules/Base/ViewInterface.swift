@@ -6,10 +6,6 @@
 //
 
 import Foundation
-protocol ViewInterface: AnyObject {
-    
-}
+protocol ViewInterface: AnyObject {}
 
-extension ViewInterface {
-    
-}
+extension ViewInterface {}

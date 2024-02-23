@@ -6,9 +6,6 @@
 //
 
 import Foundation
-protocol FormatterInterface : AnyObject {
-}
+protocol FormatterInterface: AnyObject {}
 
-extension FormatterInterface{
-    
-}
+extension FormatterInterface {}

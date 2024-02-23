@@ -8,10 +8,8 @@
 
 import UIKit
 
-final class WaetherFormatter {
-}
+final class WaetherFormatter {}
 
 // MARK: - Extensions -
 
-extension WaetherFormatter: WaetherFormatterInterface {
-}
+extension WaetherFormatter: WaetherFormatterInterface {}

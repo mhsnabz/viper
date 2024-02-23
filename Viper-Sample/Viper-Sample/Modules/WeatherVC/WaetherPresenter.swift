@@ -9,7 +9,6 @@
 import Foundation
 
 final class WaetherPresenter {
-    
     // MARK: - Private properties -
 
     private unowned let view: WaetherViewInterface
@@ -29,5 +28,4 @@ final class WaetherPresenter {
 
 // MARK: - Extensions -
 
-extension WaetherPresenter: WaetherPresenterInterface {
-}
+extension WaetherPresenter: WaetherPresenterInterface {}
