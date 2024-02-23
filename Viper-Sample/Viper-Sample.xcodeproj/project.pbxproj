@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D0144A22B86799700D9692B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0144A12B86799700D9692B /* Router.swift */; };
-		8D0144A42B867A0A00D9692B /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0144A32B867A0A00D9692B /* Presenter.swift */; };
-		8D0144A62B867A6F00D9692B /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0144A52B867A6F00D9692B /* Interactor.swift */; };
-		8D0144A82B867AA000D9692B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0144A72B867AA000D9692B /* View.swift */; };
 		8D0144AC2B8686ED00D9692B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0144AB2B8686ED00D9692B /* UIView+Extension.swift */; };
 		8D0144AE2B86876500D9692B /* Gradient+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0144AD2B86876500D9692B /* Gradient+Extension.swift */; };
 		8D0144B02B8687AC00D9692B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0144AF2B8687AC00D9692B /* Colors.xcassets */; };
@@ -24,15 +20,28 @@
 		8D2C2F582B866D1500E3D3D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2C2F572B866D1500E3D3D2 /* SceneDelegate.swift */; };
 		8D2C2F5F2B866D1600E3D3D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D2C2F5E2B866D1600E3D3D2 /* Assets.xcassets */; };
 		8D2C2F622B866D1600E3D3D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D2C2F602B866D1600E3D3D2 /* LaunchScreen.storyboard */; };
-		8D2C2F712B86747E00E3D3D2 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2C2F6F2B86747E00E3D3D2 /* SplashViewController.swift */; };
 		8D2C2F722B86747E00E3D3D2 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2C2F702B86747E00E3D3D2 /* SplashViewController.xib */; };
+		8D36878F2B88DF1D006F6CB9 /* WireframeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36878E2B88DF1D006F6CB9 /* WireframeInterface.swift */; };
+		8D3687912B88DF31006F6CB9 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3687902B88DF31006F6CB9 /* ViewInterface.swift */; };
+		8D3687932B88DF3E006F6CB9 /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3687922B88DF3E006F6CB9 /* InteractorInterface.swift */; };
+		8D3687952B88DF4A006F6CB9 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3687942B88DF4A006F6CB9 /* PresenterInterface.swift */; };
+		8D3687A22B88FEB6006F6CB9 /* SplashInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36879C2B88FEB6006F6CB9 /* SplashInterfaces.swift */; };
+		8D3687A32B88FEB6006F6CB9 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36879D2B88FEB6006F6CB9 /* SplashPresenter.swift */; };
+		8D3687A42B88FEB6006F6CB9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36879E2B88FEB6006F6CB9 /* SplashViewController.swift */; };
+		8D3687A72B88FEB6006F6CB9 /* SplashWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3687A12B88FEB6006F6CB9 /* SplashWireframe.swift */; };
+		8D3687A92B88FEDE006F6CB9 /* FormatterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3687A82B88FEDE006F6CB9 /* FormatterInterface.swift */; };
+		8DAF67332B8920610063B14D /* WaetherInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF672C2B8920610063B14D /* WaetherInterfaces.swift */; };
+		8DAF67342B8920610063B14D /* WaetherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF672D2B8920610063B14D /* WaetherPresenter.swift */; };
+		8DAF67352B8920610063B14D /* WaetherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF672E2B8920610063B14D /* WaetherViewController.swift */; };
+		8DAF67362B8920610063B14D /* WaetherFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF672F2B8920610063B14D /* WaetherFormatter.swift */; };
+		8DAF67372B8920610063B14D /* WaetherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF67302B8920610063B14D /* WaetherInteractor.swift */; };
+		8DAF67382B8920610063B14D /* WaetherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DAF67312B8920610063B14D /* WaetherViewController.xib */; };
+		8DAF67392B8920610063B14D /* WaetherWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF67322B8920610063B14D /* WaetherWireframe.swift */; };
+		8DAF673B2B8925690063B14D /* SplashFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF673A2B8925690063B14D /* SplashFormatter.swift */; };
+		8DAF673D2B8925880063B14D /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF673C2B8925880063B14D /* SplashInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8D0144A12B86799700D9692B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		8D0144A32B867A0A00D9692B /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		8D0144A52B867A6F00D9692B /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
-		8D0144A72B867AA000D9692B /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		8D0144AB2B8686ED00D9692B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		8D0144AD2B86876500D9692B /* Gradient+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gradient+Extension.swift"; sourceTree = "<group>"; };
 		8D0144AF2B8687AC00D9692B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -48,8 +57,25 @@
 		8D2C2F5E2B866D1600E3D3D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D2C2F612B866D1600E3D3D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D2C2F632B866D1600E3D3D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D2C2F6F2B86747E00E3D3D2 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		8D2C2F702B86747E00E3D3D2 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		8D36878E2B88DF1D006F6CB9 /* WireframeInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireframeInterface.swift; sourceTree = "<group>"; };
+		8D3687902B88DF31006F6CB9 /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		8D3687922B88DF3E006F6CB9 /* InteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		8D3687942B88DF4A006F6CB9 /* PresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		8D36879C2B88FEB6006F6CB9 /* SplashInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInterfaces.swift; sourceTree = "<group>"; };
+		8D36879D2B88FEB6006F6CB9 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		8D36879E2B88FEB6006F6CB9 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		8D3687A12B88FEB6006F6CB9 /* SplashWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashWireframe.swift; sourceTree = "<group>"; };
+		8D3687A82B88FEDE006F6CB9 /* FormatterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterInterface.swift; sourceTree = "<group>"; };
+		8DAF672C2B8920610063B14D /* WaetherInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaetherInterfaces.swift; sourceTree = "<group>"; };
+		8DAF672D2B8920610063B14D /* WaetherPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaetherPresenter.swift; sourceTree = "<group>"; };
+		8DAF672E2B8920610063B14D /* WaetherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaetherViewController.swift; sourceTree = "<group>"; };
+		8DAF672F2B8920610063B14D /* WaetherFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaetherFormatter.swift; sourceTree = "<group>"; };
+		8DAF67302B8920610063B14D /* WaetherInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaetherInteractor.swift; sourceTree = "<group>"; };
+		8DAF67312B8920610063B14D /* WaetherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaetherViewController.xib; sourceTree = "<group>"; };
+		8DAF67322B8920610063B14D /* WaetherWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaetherWireframe.swift; sourceTree = "<group>"; };
+		8DAF673A2B8925690063B14D /* SplashFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashFormatter.swift; sourceTree = "<group>"; };
+		8DAF673C2B8925880063B14D /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,12 +139,8 @@
 		8D2C2F542B866D1500E3D3D2 /* Viper-Sample */ = {
 			isa = PBXGroup;
 			children = (
+				8D36873B2B87C755006F6CB9 /* Modules */,
 				8D0144A92B8686C900D9692B /* Helper */,
-				8D2C2F6D2B866D9900E3D3D2 /* View */,
-				8D2C2F6C2B866D8F00E3D3D2 /* Interactor */,
-				8D2C2F6B2B866D7C00E3D3D2 /* Presenter */,
-				8D2C2F6A2B866D6500E3D3D2 /* Entity */,
-				8D2C2F692B866D4800E3D3D2 /* Router */,
 				8D2C2F552B866D1500E3D3D2 /* AppDelegate.swift */,
 				8D2C2F572B866D1500E3D3D2 /* SceneDelegate.swift */,
 				8D0144AF2B8687AC00D9692B /* Colors.xcassets */,
@@ -129,53 +151,54 @@
 			path = "Viper-Sample";
 			sourceTree = "<group>";
 		};
-		8D2C2F692B866D4800E3D3D2 /* Router */ = {
+		8D36873B2B87C755006F6CB9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				8D0144A12B86799700D9692B /* Router.swift */,
+				8D36878D2B88DEF9006F6CB9 /* Base */,
+				8D36873D2B87C8E6006F6CB9 /* WeatherVC */,
+				8D36873C2B87C75D006F6CB9 /* SplashVC */,
 			);
-			path = Router;
+			path = Modules;
 			sourceTree = "<group>";
 		};
-		8D2C2F6A2B866D6500E3D3D2 /* Entity */ = {
+		8D36873C2B87C75D006F6CB9 /* SplashVC */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
-		8D2C2F6B2B866D7C00E3D3D2 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				8D0144A32B867A0A00D9692B /* Presenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		8D2C2F6C2B866D8F00E3D3D2 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				8D0144A52B867A6F00D9692B /* Interactor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		8D2C2F6D2B866D9900E3D3D2 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				8D2C2F6E2B8672EA00E3D3D2 /* SplashVC */,
-				8D0144A72B867AA000D9692B /* View.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		8D2C2F6E2B8672EA00E3D3D2 /* SplashVC */ = {
-			isa = PBXGroup;
-			children = (
-				8D2C2F6F2B86747E00E3D3D2 /* SplashViewController.swift */,
 				8D2C2F702B86747E00E3D3D2 /* SplashViewController.xib */,
+				8D36879C2B88FEB6006F6CB9 /* SplashInterfaces.swift */,
+				8D36879D2B88FEB6006F6CB9 /* SplashPresenter.swift */,
+				8D36879E2B88FEB6006F6CB9 /* SplashViewController.swift */,
+				8D3687A12B88FEB6006F6CB9 /* SplashWireframe.swift */,
+				8DAF673A2B8925690063B14D /* SplashFormatter.swift */,
+				8DAF673C2B8925880063B14D /* SplashInteractor.swift */,
 			);
 			path = SplashVC;
+			sourceTree = "<group>";
+		};
+		8D36873D2B87C8E6006F6CB9 /* WeatherVC */ = {
+			isa = PBXGroup;
+			children = (
+				8DAF672C2B8920610063B14D /* WaetherInterfaces.swift */,
+				8DAF672D2B8920610063B14D /* WaetherPresenter.swift */,
+				8DAF672E2B8920610063B14D /* WaetherViewController.swift */,
+				8DAF672F2B8920610063B14D /* WaetherFormatter.swift */,
+				8DAF67302B8920610063B14D /* WaetherInteractor.swift */,
+				8DAF67312B8920610063B14D /* WaetherViewController.xib */,
+				8DAF67322B8920610063B14D /* WaetherWireframe.swift */,
+			);
+			path = WeatherVC;
+			sourceTree = "<group>";
+		};
+		8D36878D2B88DEF9006F6CB9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8D36878E2B88DF1D006F6CB9 /* WireframeInterface.swift */,
+				8D3687902B88DF31006F6CB9 /* ViewInterface.swift */,
+				8D3687922B88DF3E006F6CB9 /* InteractorInterface.swift */,
+				8D3687942B88DF4A006F6CB9 /* PresenterInterface.swift */,
+				8D3687A82B88FEDE006F6CB9 /* FormatterInterface.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +267,7 @@
 				8D0144BA2B86893600D9692B /* Nunito-Medium.ttf in Resources */,
 				8D0144B92B86893600D9692B /* Nunito-Bold.ttf in Resources */,
 				8D0144BC2B86893600D9692B /* Nunito-Regular.ttf in Resources */,
+				8DAF67382B8920610063B14D /* WaetherViewController.xib in Resources */,
 				8D0144BB2B86893600D9692B /* Nunito-Light.ttf in Resources */,
 				8D0144B82B86893600D9692B /* Nunito-ExtraLight.ttf in Resources */,
 			);
@@ -256,15 +280,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3687932B88DF3E006F6CB9 /* InteractorInterface.swift in Sources */,
+				8DAF673D2B8925880063B14D /* SplashInteractor.swift in Sources */,
+				8DAF67342B8920610063B14D /* WaetherPresenter.swift in Sources */,
+				8DAF67362B8920610063B14D /* WaetherFormatter.swift in Sources */,
+				8DAF673B2B8925690063B14D /* SplashFormatter.swift in Sources */,
+				8D3687A32B88FEB6006F6CB9 /* SplashPresenter.swift in Sources */,
 				8D0144AE2B86876500D9692B /* Gradient+Extension.swift in Sources */,
-				8D0144A62B867A6F00D9692B /* Interactor.swift in Sources */,
-				8D0144A22B86799700D9692B /* Router.swift in Sources */,
+				8DAF67372B8920610063B14D /* WaetherInteractor.swift in Sources */,
+				8D3687A92B88FEDE006F6CB9 /* FormatterInterface.swift in Sources */,
+				8D3687A72B88FEB6006F6CB9 /* SplashWireframe.swift in Sources */,
 				8D0144AC2B8686ED00D9692B /* UIView+Extension.swift in Sources */,
-				8D2C2F712B86747E00E3D3D2 /* SplashViewController.swift in Sources */,
+				8DAF67332B8920610063B14D /* WaetherInterfaces.swift in Sources */,
+				8DAF67392B8920610063B14D /* WaetherWireframe.swift in Sources */,
 				8D2C2F562B866D1500E3D3D2 /* AppDelegate.swift in Sources */,
+				8DAF67352B8920610063B14D /* WaetherViewController.swift in Sources */,
 				8D2C2F582B866D1500E3D3D2 /* SceneDelegate.swift in Sources */,
-				8D0144A82B867AA000D9692B /* View.swift in Sources */,
-				8D0144A42B867A0A00D9692B /* Presenter.swift in Sources */,
+				8D36878F2B88DF1D006F6CB9 /* WireframeInterface.swift in Sources */,
+				8D3687912B88DF31006F6CB9 /* ViewInterface.swift in Sources */,
+				8D3687952B88DF4A006F6CB9 /* PresenterInterface.swift in Sources */,
+				8D3687A22B88FEB6006F6CB9 /* SplashInterfaces.swift in Sources */,
+				8D3687A42B88FEB6006F6CB9 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

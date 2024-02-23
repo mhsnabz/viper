@@ -29,6 +29,7 @@
                     <rect key="frame" x="36" y="100" width="303" height="260"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="303" id="C23-tv-Vu9"/>
+                        <constraint firstAttribute="width" secondItem="ZV6-R0-HtB" secondAttribute="height" multiplier="303:260" id="MbY-fS-qtU"/>
                         <constraint firstAttribute="width" secondItem="ZV6-R0-HtB" secondAttribute="height" multiplier="303:260" id="NdI-Uy-YxF"/>
                     </constraints>
                 </imageView>
@@ -49,35 +50,14 @@
                         </label>
                     </subviews>
                 </stackView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGu-QR-fpr">
-                    <rect key="frame" x="24" y="532" width="327" height="60"/>
-                    <color key="backgroundColor" red="0.8392156959" green="0.7019608021" blue="0.2941176593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="60" id="bWJ-5T-Igo"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="30"/>
-                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Get Start">
-                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="30"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.1803921568627451" green="0.19215686274509802" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="EGu-QR-fpr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="DQl-GA-k5q"/>
                 <constraint firstItem="ZV6-R0-HtB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FOH-pF-1b2"/>
-                <constraint firstItem="ZV6-R0-HtB" firstAttribute="width" secondItem="ZV6-R0-HtB" secondAttribute="height" multiplier="303:260" id="MbY-fS-qtU"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EGu-QR-fpr" secondAttribute="trailing" constant="24" id="OOy-qS-98p"/>
                 <constraint firstItem="ZV6-R0-HtB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="PLT-BG-Gx1"/>
+                <constraint firstItem="U5t-b5-zYM" firstAttribute="top" secondItem="ZV6-R0-HtB" secondAttribute="bottom" constant="12" id="ax5-CN-34w"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="U5t-b5-zYM" secondAttribute="trailing" constant="50" id="eKH-Xb-aCH"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="EGu-QR-fpr" secondAttribute="bottom" constant="75" id="evP-A3-tvB"/>
-                <constraint firstItem="EGu-QR-fpr" firstAttribute="top" secondItem="U5t-b5-zYM" secondAttribute="bottom" constant="50" id="pku-UR-9Xy"/>
                 <constraint firstItem="U5t-b5-zYM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="tJZ-Ng-vTs"/>
             </constraints>
             <point key="canvasLocation" x="48" y="21"/>
