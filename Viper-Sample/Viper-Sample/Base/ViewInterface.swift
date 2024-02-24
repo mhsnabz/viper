@@ -6,6 +6,9 @@
 //
 
 import Foundation
-protocol ViewInterface: AnyObject {}
+protocol ViewInterface: AnyObject {
+    func isLoading()
+    func stopLoading()
+}
 
 extension ViewInterface {}

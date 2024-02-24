@@ -29,4 +29,12 @@ final class SplashViewController: UIViewController {
 
 /// Extension conforming to the `SplashViewInterface` protocol,
 /// providing necessary methods for interacting with the splash view.
-extension SplashViewController: SplashViewInterface {}
+extension SplashViewController: SplashViewInterface {
+    func isLoading() {
+        print("loading")
+    }
+
+    func stopLoading() {
+        print("stop loading")
+    }
+}
