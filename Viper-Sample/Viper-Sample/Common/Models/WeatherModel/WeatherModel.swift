@@ -16,11 +16,20 @@ struct WeatherModel: Codable {
 
     let current: Current?
     let daily: [Daily]?
-
+    let hourly: [Hourly]?
     enum CodingKeys: String, CodingKey {
         case lat, lon, timezone
         case timezoneOffset = "timezone_offset"
-        case current, daily
+        case current, daily, hourly
+    }
+}
+
+struct Hourly: Codable {
+    let dt: Int?
+    let temp: Double?
+    let weather: [Weather]?
+    enum CodingKeys: String, CodingKey {
+        case dt, weather, temp
     }
 }
 

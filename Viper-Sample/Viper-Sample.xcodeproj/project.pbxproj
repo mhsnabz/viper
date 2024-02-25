@@ -48,6 +48,21 @@
 		8DAF67632B8A55230063B14D /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8DAF67622B8A55230063B14D /* SDWebImageMapKit */; };
 		8DAF67662B8A559A0063B14D /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF67652B8A559A0063B14D /* UIImageView+Extension.swift */; };
 		8DAF67682B8A5ABD0063B14D /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF67672B8A5ABD0063B14D /* UILabel+Extension.swift */; };
+		8DAF67712B8B66840063B14D /* SearchPlaceInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF676A2B8B66840063B14D /* SearchPlaceInterfaces.swift */; };
+		8DAF67722B8B66840063B14D /* SearchPlacePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF676B2B8B66840063B14D /* SearchPlacePresenter.swift */; };
+		8DAF67732B8B66840063B14D /* SearchPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF676C2B8B66840063B14D /* SearchPlaceViewController.swift */; };
+		8DAF67742B8B66840063B14D /* SearchPlaceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF676D2B8B66840063B14D /* SearchPlaceFormatter.swift */; };
+		8DAF67752B8B66840063B14D /* SearchPlaceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF676E2B8B66840063B14D /* SearchPlaceInteractor.swift */; };
+		8DAF67762B8B66840063B14D /* SearchPlaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DAF676F2B8B66840063B14D /* SearchPlaceViewController.xib */; };
+		8DAF67772B8B66840063B14D /* SearchPlaceWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF67702B8B66840063B14D /* SearchPlaceWireframe.swift */; };
+		8DF2F7CC2B8B686C0025FA4C /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2F7CA2B8B686C0025FA4C /* CoreData.xcdatamodeld */; };
+		8DF2F7D32B8B6B3B0025FA4C /* Userdefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2F7D22B8B6B3B0025FA4C /* Userdefaults+Extension.swift */; };
+		8DF2F7DA2B8B6DD70025FA4C /* Locations+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2F7D82B8B6DD70025FA4C /* Locations+CoreDataClass.swift */; };
+		8DF2F7DB2B8B6DD70025FA4C /* Locations+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2F7D92B8B6DD70025FA4C /* Locations+CoreDataProperties.swift */; };
+		8DF2F7DD2B8B6F530025FA4C /* CoreLocation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2F7DC2B8B6F530025FA4C /* CoreLocation+Extension.swift */; };
+		8DF2F7E02B8B80AC0025FA4C /* LocationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2F7DE2B8B80AC0025FA4C /* LocationsCell.swift */; };
+		8DF2F7E12B8B80AC0025FA4C /* LocationsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF2F7DF2B8B80AC0025FA4C /* LocationsCell.xib */; };
+		8DF2F7E32B8B85370025FA4C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2F7E22B8B85370025FA4C /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +107,21 @@
 		8DAF675C2B8A4AED0063B14D /* WeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCell.xib; sourceTree = "<group>"; };
 		8DAF67652B8A559A0063B14D /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		8DAF67672B8A5ABD0063B14D /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		8DAF676A2B8B66840063B14D /* SearchPlaceInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceInterfaces.swift; sourceTree = "<group>"; };
+		8DAF676B2B8B66840063B14D /* SearchPlacePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlacePresenter.swift; sourceTree = "<group>"; };
+		8DAF676C2B8B66840063B14D /* SearchPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceViewController.swift; sourceTree = "<group>"; };
+		8DAF676D2B8B66840063B14D /* SearchPlaceFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceFormatter.swift; sourceTree = "<group>"; };
+		8DAF676E2B8B66840063B14D /* SearchPlaceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceInteractor.swift; sourceTree = "<group>"; };
+		8DAF676F2B8B66840063B14D /* SearchPlaceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchPlaceViewController.xib; sourceTree = "<group>"; };
+		8DAF67702B8B66840063B14D /* SearchPlaceWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceWireframe.swift; sourceTree = "<group>"; };
+		8DF2F7CB2B8B686C0025FA4C /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		8DF2F7D22B8B6B3B0025FA4C /* Userdefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Userdefaults+Extension.swift"; sourceTree = "<group>"; };
+		8DF2F7D82B8B6DD70025FA4C /* Locations+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locations+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8DF2F7D92B8B6DD70025FA4C /* Locations+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locations+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8DF2F7DC2B8B6F530025FA4C /* CoreLocation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreLocation+Extension.swift"; sourceTree = "<group>"; };
+		8DF2F7DE2B8B80AC0025FA4C /* LocationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsCell.swift; sourceTree = "<group>"; };
+		8DF2F7DF2B8B80AC0025FA4C /* LocationsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationsCell.xib; sourceTree = "<group>"; };
+		8DF2F7E22B8B85370025FA4C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,24 +137,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8D0144A92B8686C900D9692B /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				8D0144B12B86891000D9692B /* Fonts */,
-				8D0144AA2B8686D600D9692B /* Extension */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		8D0144AA2B8686D600D9692B /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				8D0144AB2B8686ED00D9692B /* UIView+Extension.swift */,
-				8D0144AD2B86876500D9692B /* Gradient+Extension.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
 		8D0144B12B86891000D9692B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,13 +172,13 @@
 				8DAF67412B8947320063B14D /* Common */,
 				8D36878D2B88DEF9006F6CB9 /* Base */,
 				8D36873B2B87C755006F6CB9 /* Modules */,
-				8D0144A92B8686C900D9692B /* Helper */,
 				8D2C2F552B866D1500E3D3D2 /* AppDelegate.swift */,
 				8D2C2F572B866D1500E3D3D2 /* SceneDelegate.swift */,
 				8D0144AF2B8687AC00D9692B /* Colors.xcassets */,
 				8D2C2F5E2B866D1600E3D3D2 /* Assets.xcassets */,
 				8D2C2F602B866D1600E3D3D2 /* LaunchScreen.storyboard */,
 				8D2C2F632B866D1600E3D3D2 /* Info.plist */,
+				8DF2F7CA2B8B686C0025FA4C /* CoreData.xcdatamodeld */,
 			);
 			path = "Viper-Sample";
 			sourceTree = "<group>";
@@ -174,6 +186,7 @@
 		8D36873B2B87C755006F6CB9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8DAF67692B8B666D0063B14D /* SearchPlaceVC */,
 				8D36873D2B87C8E6006F6CB9 /* WeatherVC */,
 				8D36873C2B87C75D006F6CB9 /* SplashVC */,
 			);
@@ -224,6 +237,8 @@
 		8DAF67412B8947320063B14D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8DF2F7CD2B8B68950025FA4C /* CoreData */,
+				8D0144B12B86891000D9692B /* Fonts */,
 				8DAF67642B8A55890063B14D /* Extension */,
 				8DAF67572B89F7C10063B14D /* ApiConstant */,
 				8DAF67532B89F40C0063B14D /* Network */,
@@ -269,6 +284,8 @@
 			children = (
 				8DAF675B2B8A4AED0063B14D /* WeatherCell.swift */,
 				8DAF675C2B8A4AED0063B14D /* WeatherCell.xib */,
+				8DF2F7DE2B8B80AC0025FA4C /* LocationsCell.swift */,
+				8DF2F7DF2B8B80AC0025FA4C /* LocationsCell.xib */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -276,10 +293,38 @@
 		8DAF67642B8A55890063B14D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8D0144AD2B86876500D9692B /* Gradient+Extension.swift */,
+				8D0144AB2B8686ED00D9692B /* UIView+Extension.swift */,
 				8DAF67652B8A559A0063B14D /* UIImageView+Extension.swift */,
 				8DAF67672B8A5ABD0063B14D /* UILabel+Extension.swift */,
+				8DF2F7D22B8B6B3B0025FA4C /* Userdefaults+Extension.swift */,
+				8DF2F7DC2B8B6F530025FA4C /* CoreLocation+Extension.swift */,
+				8DF2F7E22B8B85370025FA4C /* String+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		8DAF67692B8B666D0063B14D /* SearchPlaceVC */ = {
+			isa = PBXGroup;
+			children = (
+				8DAF676A2B8B66840063B14D /* SearchPlaceInterfaces.swift */,
+				8DAF676B2B8B66840063B14D /* SearchPlacePresenter.swift */,
+				8DAF676C2B8B66840063B14D /* SearchPlaceViewController.swift */,
+				8DAF676D2B8B66840063B14D /* SearchPlaceFormatter.swift */,
+				8DAF676E2B8B66840063B14D /* SearchPlaceInteractor.swift */,
+				8DAF676F2B8B66840063B14D /* SearchPlaceViewController.xib */,
+				8DAF67702B8B66840063B14D /* SearchPlaceWireframe.swift */,
+			);
+			path = SearchPlaceVC;
+			sourceTree = "<group>";
+		};
+		8DF2F7CD2B8B68950025FA4C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8DF2F7D82B8B6DD70025FA4C /* Locations+CoreDataClass.swift */,
+				8DF2F7D92B8B6DD70025FA4C /* Locations+CoreDataProperties.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DF2F7E12B8B80AC0025FA4C /* LocationsCell.xib in Resources */,
 				8D2C2F622B866D1600E3D3D2 /* LaunchScreen.storyboard in Resources */,
 				8D2C2F5F2B866D1600E3D3D2 /* Assets.xcassets in Resources */,
 				8D0144B02B8687AC00D9692B /* Colors.xcassets in Resources */,
@@ -357,6 +403,7 @@
 				8D0144B92B86893600D9692B /* Nunito-Bold.ttf in Resources */,
 				8D0144BC2B86893600D9692B /* Nunito-Regular.ttf in Resources */,
 				8DAF67382B8920610063B14D /* WaetherViewController.xib in Resources */,
+				8DAF67762B8B66840063B14D /* SearchPlaceViewController.xib in Resources */,
 				8D0144BB2B86893600D9692B /* Nunito-Light.ttf in Resources */,
 				8D0144B82B86893600D9692B /* Nunito-ExtraLight.ttf in Resources */,
 			);
@@ -371,29 +418,42 @@
 			files = (
 				8D3687932B88DF3E006F6CB9 /* InteractorInterface.swift in Sources */,
 				8DAF673D2B8925880063B14D /* SplashInteractor.swift in Sources */,
+				8DAF67722B8B66840063B14D /* SearchPlacePresenter.swift in Sources */,
 				8DAF67662B8A559A0063B14D /* UIImageView+Extension.swift in Sources */,
 				8DAF67342B8920610063B14D /* WaetherPresenter.swift in Sources */,
 				8DAF67592B89F7CF0063B14D /* ApiConstant.swift in Sources */,
+				8DF2F7E02B8B80AC0025FA4C /* LocationsCell.swift in Sources */,
 				8DAF67362B8920610063B14D /* WaetherFormatter.swift in Sources */,
+				8DF2F7E32B8B85370025FA4C /* String+Extension.swift in Sources */,
 				8DAF673B2B8925690063B14D /* SplashFormatter.swift in Sources */,
 				8D3687A32B88FEB6006F6CB9 /* SplashPresenter.swift in Sources */,
 				8D0144AE2B86876500D9692B /* Gradient+Extension.swift in Sources */,
+				8DF2F7D32B8B6B3B0025FA4C /* Userdefaults+Extension.swift in Sources */,
 				8DAF67372B8920610063B14D /* WaetherInteractor.swift in Sources */,
 				8D3687A92B88FEDE006F6CB9 /* FormatterInterface.swift in Sources */,
+				8DAF67752B8B66840063B14D /* SearchPlaceInteractor.swift in Sources */,
 				8D3687A72B88FEB6006F6CB9 /* SplashWireframe.swift in Sources */,
+				8DF2F7DB2B8B6DD70025FA4C /* Locations+CoreDataProperties.swift in Sources */,
 				8DAF67482B89F38A0063B14D /* WeatherModel.swift in Sources */,
+				8DAF67732B8B66840063B14D /* SearchPlaceViewController.swift in Sources */,
 				8D0144AC2B8686ED00D9692B /* UIView+Extension.swift in Sources */,
 				8DAF67332B8920610063B14D /* WaetherInterfaces.swift in Sources */,
 				8DAF67392B8920610063B14D /* WaetherWireframe.swift in Sources */,
 				8D2C2F562B866D1500E3D3D2 /* AppDelegate.swift in Sources */,
+				8DAF67772B8B66840063B14D /* SearchPlaceWireframe.swift in Sources */,
 				8DAF67682B8A5ABD0063B14D /* UILabel+Extension.swift in Sources */,
+				8DF2F7CC2B8B686C0025FA4C /* CoreData.xcdatamodeld in Sources */,
+				8DF2F7DD2B8B6F530025FA4C /* CoreLocation+Extension.swift in Sources */,
+				8DF2F7DA2B8B6DD70025FA4C /* Locations+CoreDataClass.swift in Sources */,
 				8DAF67352B8920610063B14D /* WaetherViewController.swift in Sources */,
 				8DAF67562B89F5770063B14D /* WeatherService.swift in Sources */,
 				8D2C2F582B866D1500E3D3D2 /* SceneDelegate.swift in Sources */,
 				8D36878F2B88DF1D006F6CB9 /* WireframeInterface.swift in Sources */,
 				8D3687912B88DF31006F6CB9 /* ViewInterface.swift in Sources */,
+				8DAF67742B8B66840063B14D /* SearchPlaceFormatter.swift in Sources */,
 				8D3687952B88DF4A006F6CB9 /* PresenterInterface.swift in Sources */,
 				8DAF675D2B8A4AED0063B14D /* WeatherCell.swift in Sources */,
+				8DAF67712B8B66840063B14D /* SearchPlaceInterfaces.swift in Sources */,
 				8D3687A22B88FEB6006F6CB9 /* SplashInterfaces.swift in Sources */,
 				8D3687A42B88FEB6006F6CB9 /* SplashViewController.swift in Sources */,
 			);
@@ -632,6 +692,19 @@
 			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		8DF2F7CA2B8B686C0025FA4C /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8DF2F7CB2B8B686C0025FA4C /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 8DF2F7CB2B8B686C0025FA4C /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8D2C2F4A2B866D1500E3D3D2 /* Project object */;
 }

@@ -33,14 +33,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GyT-j7-4rE">
-                                <rect key="frame" x="8.6666666666666643" y="8" width="65" height="65"/>
+                                <rect key="frame" x="18.666666666666671" y="8" width="45" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="wfe-55-1Ww"/>
-                                    <constraint firstAttribute="width" constant="65" id="xtu-b4-ivK"/>
+                                    <constraint firstAttribute="height" constant="45" id="wfe-55-1Ww"/>
+                                    <constraint firstAttribute="width" constant="45" id="xtu-b4-ivK"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngC-PE-d9z">
-                                <rect key="frame" x="2" y="77" width="78" height="35"/>
+                                <rect key="frame" x="2" y="57" width="78" height="55"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>

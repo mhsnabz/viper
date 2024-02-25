@@ -28,43 +28,13 @@ extension UILabel {
 
     // Function to retrieve the name of the current location based on latitude and longitude
     func getCurrentPlace(latitude: Double, longitude: Double) {
-        // Creating a CLLocation object with the provided coordinates
-        let location = CLLocation(latitude: latitude, longitude: longitude)
-
-        // Initializing a CLGeocoder instance to perform reverse geocoding
-        let geocoder = CLGeocoder()
-
-        // Performing reverse geocoding to obtain the location name
-        geocoder.reverseGeocodeLocation(location) { placemarks, error in
-            // Handling any potential errors during reverse geocoding
-            print("error: \(error?.localizedDescription)")
-
-            // String to store the extracted location name
-            var locationName = ""
-
-            // Extracting location information from the first placemark
-            guard let placemark = placemarks?.first else {
-                // If no placemark is available, update the label with "Unknown Location"
-                self.text = "Unknown Location"
-                return
-            }
-            if let locality = placemark.locality {
-                locationName += locality
-            }
-            if let adminArea = placemark.administrativeArea {
-                if !locationName.isEmpty {
-                    locationName += ", "
-                }
-                locationName += adminArea
-            }
-            if let country = placemark.country {
-                if !locationName.isEmpty {
-                    locationName += ", "
-                }
-                locationName += country
-            }
-
-            // Updating the text of the UILabel instance with the obtained location name
+        var locationName = ""
+        CLLocation.getCurrentPlace(latitude: latitude, longitude: longitude) { cityName in
+            locationName += cityName ?? ""
+            self.text = locationName
+        } completionCounry: { countryName in
+            locationName += ","
+            locationName += countryName ?? ""
             self.text = locationName
         }
     }

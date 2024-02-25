@@ -4,7 +4,6 @@
 //
 //  Created by srbrt on 23.02.2024.
 //
-//
 
 import Foundation
 
@@ -30,6 +29,12 @@ final class WaetherPresenter {
     /// The array containing daily weather data.
     private var dailyWeather: [Daily] = []
 
+    /// The array containing hourly weather data.
+    private var hourlyWeather: [Hourly] = []
+
+    /// The array containing saved locations data.
+    private var locations: [Locations] = []
+
     // MARK: - Lifecycle -
 
     /// Initializes an instance of `WaetherPresenter`.
@@ -48,7 +53,12 @@ final class WaetherPresenter {
 
 // MARK: - Extensions -
 
-extension WaetherPresenter: WaetherPresenterInterface {
+extension WaetherPresenter: WeatherPresenterInterface {
+    /// Retrieves the data source for locations.
+    func getLocationDataSource() -> [Locations] {
+        return locations
+    }
+
     /// Requests weather data from the interactor.
     /// - Parameters:
     ///   - lat: The latitude.
@@ -66,11 +76,21 @@ extension WaetherPresenter: WaetherPresenterInterface {
                 if let items = success.daily {
                     self.dailyWeather = items
                 }
+                if let items = success.hourly {
+                    self.hourlyWeather = items
+                }
                 // Reload the view with the fetched weather data
                 self.view.reloadList(success)
             case let .failure(failure):
                 // Handle failure case (e.g., show alert)
                 break
+            }
+        }
+
+        // Fetch saved locations from the interactor
+        interactor.getSavedLocation { [weak self] model in
+            if let model = model {
+                self?.locations = model
             }
         }
     }
@@ -81,6 +101,36 @@ extension WaetherPresenter: WaetherPresenterInterface {
     func item(at indexPath: IndexPath) -> Daily? {
         if !dailyWeather.isEmpty {
             return dailyWeather[indexPath.row]
+        }
+        return nil
+    }
+
+    /// Retrieves the hourly weather item at the specified index path.
+    /// - Parameter indexPath: The index path of the item.
+    /// - Returns: The hourly weather item at the specified index path, if available.
+    func itemAtHourly(at indexPath: IndexPath) -> Hourly? {
+        if !hourlyWeather.isEmpty {
+            return hourlyWeather[indexPath.row]
+        }
+        return nil
+    }
+
+    /// Retrieves the number of rows in the hourly weather section.
+    func numberOfRowInSection() -> Int {
+        return hourlyWeather.count
+    }
+
+    /// Retrieves the number of rows in the saved locations section.
+    func locationsNumberOfRowInSection() -> Int {
+        return locations.count
+    }
+
+    /// Retrieves the location item at the specified index path.
+    /// - Parameter indexPath: The index path of the item.
+    /// - Returns: The location item at the specified index path, if available.
+    func locationItem(at indexPath: IndexPath) -> Locations? {
+        if !locations.isEmpty {
+            return locations[indexPath.row]
         }
         return nil
     }

@@ -24,6 +24,10 @@ final class WaetherInteractor {
 // MARK: - Extensions -
 
 extension WaetherInteractor: WaetherInteractorInterface {
+    func getSavedLocation(_ completion: @escaping ([Locations]?) -> Void) {
+        completion(service.getSavedLocations())
+    }
+
     /// Fetches the current weather data for the specified latitude and longitude coordinates.
     /// - Parameters:
     ///   - lat: The latitude of the location.

@@ -44,8 +44,16 @@ final class SplashPresenter: CLLocationManager, CLLocationManagerDelegate {
     func locationManager(_: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         // Check if the location information is available
         if let location = locations.first {
+            let lat = Double(String(format: "%.2f", location.coordinate.latitude)) ?? 0
+            let longLat = Double(String(format: "%.2f", location.coordinate.longitude)) ?? 0
             // Navigate to the main module if location is available
-            wireframe.navigateToMain()
+            UserDefaults.setLatitude(lat)
+            UserDefaults.setLongLatiude(longLat)
+            CLLocation.getCurrentPlace(latitude: lat, longitude: longLat) { [weak self] cityName in
+                WeatherService.shared.saveLocation(latitude: lat, longLatitude: longLat, locationName: cityName ?? "Unknown Place")
+                self?.wireframe.navigateToMain()
+            } completionCounry: { _ in
+            }
         }
     }
 

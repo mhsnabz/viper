@@ -29,4 +29,18 @@ class WeatherCell: UICollectionViewCell {
             iconView.loadIcon(iconId: icon)
         }
     }
+
+    func setupUI(item: Hourly) {
+        if let currentDay = item.dt {
+            datLbl.unixTimestampToDate(dt: currentDay, type: .hours)
+        }
+
+        if let value = item.temp {
+            degreeLbl.text = String(format: "%d℃", Int(value))
+        }
+
+        if let icon = item.weather?.first?.icon {
+            iconView.loadIcon(iconId: icon)
+        }
+    }
 }
