@@ -26,7 +26,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ot-cY-ZMb">
                                 <rect key="frame" x="4" y="4" width="270" height="94"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="12"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -39,7 +39,7 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="value" white="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                 <real key="value" value="4"/>
@@ -60,6 +60,7 @@
             <size key="customSize" width="278" height="102"/>
             <connections>
                 <outlet property="locationName" destination="7ot-cY-ZMb" id="gHY-kf-DNh"/>
+                <outlet property="mainView" destination="60Q-dZ-aNv" id="h29-so-xf0"/>
             </connections>
             <point key="canvasLocation" x="312.97709923664121" y="38.732394366197184"/>
         </collectionViewCell>

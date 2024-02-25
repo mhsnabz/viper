@@ -22,8 +22,8 @@ class WeatherService {
     ///   - latitude: The latitude value of the location.
     ///   - longitude: The longitude value of the location.
     ///   - completion: A closure where the weather data will be returned or an error if the request fails.
-    func fetchWeather(latitude: Double, longitude: Double, completion: @escaping (Result<WeatherModel, APIError>) -> Void) {
-        guard let url = buildURL(latitude: latitude, longitude: longitude) else {
+    func fetchWeather(latitude: Double, longitude: Double, type: MetricType = .celcuis, completion: @escaping (Result<WeatherModel, APIError>) -> Void) {
+        guard let url = buildURL(latitude: latitude, longitude: longitude, type: type) else {
             completion(.failure(.invalidURL))
             return
         }
@@ -65,8 +65,8 @@ class WeatherService {
     ///   - latitude: The latitude value of the location.
     ///   - longitude: The longitude value of the location.
     ///   - apiKey: The API key for OpenWeatherMap (unused in the implementation).
-    func fetchWeatherCurl(latitude: Double, longitude: Double, apiKey _: String) {
-        guard let url = buildURL(latitude: latitude, longitude: longitude) else {
+    func fetchWeatherCurl(latitude: Double, longitude: Double, apiKey _: String, type: MetricType) {
+        guard let url = buildURL(latitude: latitude, longitude: longitude, type: type) else {
             return
         }
         print("curl :\(url)")
@@ -77,14 +77,16 @@ class WeatherService {
     ///   - latitude: The latitude value of the location.
     ///   - longitude: The longitude value of the location.
     /// - Returns: The constructed URL or nil if the URL cannot be constructed.
-    private func buildURL(latitude: Double, longitude: Double) -> URL? {
+    private func buildURL(latitude: Double, longitude: Double, type: MetricType) -> URL? {
         var components = URLComponents(string: ApiConstant.baseURL)
         components?.queryItems = [
             URLQueryItem(name: "lat", value: String(latitude)),
             URLQueryItem(name: "lon", value: String(longitude)),
-            URLQueryItem(name: "units", value: "metric"),
             URLQueryItem(name: "appid", value: ApiConstant.apiKey),
         ]
+        if type == .celcuis {
+            components?.queryItems?.append(URLQueryItem(name: "units", value: "metric"))
+        }
         return components?.url
     }
 

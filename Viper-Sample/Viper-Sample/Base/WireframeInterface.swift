@@ -74,6 +74,14 @@ extension UIViewController {
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: animated, completion: completion)
     }
+
+    func presentSearchVC<ViewController>(_ wireframe: BaseWireframe<ViewController>, delegate: WaetherViewController) {
+        if let vc = wireframe.viewController as? SearchPlaceViewController {
+            vc.delegate = delegate as? SelectedPlaceDelegate
+            vc.modalPresentationStyle = .currentContext
+            present(vc, animated: true)
+        }
+    }
 }
 
 extension UINavigationController {

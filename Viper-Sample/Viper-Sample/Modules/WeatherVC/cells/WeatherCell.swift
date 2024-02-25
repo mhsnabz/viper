@@ -16,13 +16,13 @@ class WeatherCell: UICollectionViewCell {
         // Initialization code
     }
 
-    func setupUI(item: Daily) {
+    func setupUI(item: Daily, metricType: MetricType) {
         if let currentDay = item.dt {
             datLbl.unixTimestampToDate(dt: currentDay)
         }
 
         if let value = item.temp?.day {
-            degreeLbl.text = String(format: "%d℃", Int(value))
+            degreeLbl.text = String(format: metricType == .celcuis ? "%d℃" : "%d℉", Int(value))
         }
 
         if let icon = item.weather?.first?.icon {
@@ -30,13 +30,13 @@ class WeatherCell: UICollectionViewCell {
         }
     }
 
-    func setupUI(item: Hourly) {
+    func setupUI(item: Hourly, metricType: MetricType) {
         if let currentDay = item.dt {
             datLbl.unixTimestampToDate(dt: currentDay, type: .hours)
         }
 
         if let value = item.temp {
-            degreeLbl.text = String(format: "%d℃", Int(value))
+            degreeLbl.text = String(format: metricType == .celcuis ? "%d℃" : "%d℉", Int(value))
         }
 
         if let icon = item.weather?.first?.icon {

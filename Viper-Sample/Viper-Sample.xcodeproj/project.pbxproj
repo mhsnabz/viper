@@ -63,6 +63,14 @@
 		8DF2F7E02B8B80AC0025FA4C /* LocationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2F7DE2B8B80AC0025FA4C /* LocationsCell.swift */; };
 		8DF2F7E12B8B80AC0025FA4C /* LocationsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF2F7DF2B8B80AC0025FA4C /* LocationsCell.xib */; };
 		8DF2F7E32B8B85370025FA4C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2F7E22B8B85370025FA4C /* String+Extension.swift */; };
+		8DF2F7E52B8B9DF30025FA4C /* SearchLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2F7E42B8B9DF30025FA4C /* SearchLocationService.swift */; };
+		8DF2F7E82B8B9EC50025FA4C /* SearchLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2F7E72B8B9EC50025FA4C /* SearchLocationModel.swift */; };
+		8DF2F7EC2B8BA90C0025FA4C /* AdressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2F7EA2B8BA90C0025FA4C /* AdressCell.swift */; };
+		8DF2F7ED2B8BA90C0025FA4C /* AdressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF2F7EB2B8BA90C0025FA4C /* AdressCell.xib */; };
+		8DF2F7EF2B8BADBD0025FA4C /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2F7EE2B8BADBD0025FA4C /* UITextField+Extension.swift */; };
+		8DF2F7F22B8BB8880025FA4C /* CustomProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2F7F12B8BB8880025FA4C /* CustomProgress.swift */; };
+		8DF2F7F42B8BB8A30025FA4C /* CustomProgress.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF2F7F32B8BB8A30025FA4C /* CustomProgress.xib */; };
+		8DF2F7F62B8BB9340025FA4C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2F7F52B8BB9340025FA4C /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +130,14 @@
 		8DF2F7DE2B8B80AC0025FA4C /* LocationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsCell.swift; sourceTree = "<group>"; };
 		8DF2F7DF2B8B80AC0025FA4C /* LocationsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationsCell.xib; sourceTree = "<group>"; };
 		8DF2F7E22B8B85370025FA4C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		8DF2F7E42B8B9DF30025FA4C /* SearchLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationService.swift; sourceTree = "<group>"; };
+		8DF2F7E72B8B9EC50025FA4C /* SearchLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationModel.swift; sourceTree = "<group>"; };
+		8DF2F7EA2B8BA90C0025FA4C /* AdressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressCell.swift; sourceTree = "<group>"; };
+		8DF2F7EB2B8BA90C0025FA4C /* AdressCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdressCell.xib; sourceTree = "<group>"; };
+		8DF2F7EE2B8BADBD0025FA4C /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		8DF2F7F12B8BB8880025FA4C /* CustomProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgress.swift; sourceTree = "<group>"; };
+		8DF2F7F32B8BB8A30025FA4C /* CustomProgress.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomProgress.xib; sourceTree = "<group>"; };
+		8DF2F7F52B8BB9340025FA4C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +253,7 @@
 		8DAF67412B8947320063B14D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8DF2F7F02B8BB87B0025FA4C /* CustomProgress */,
 				8DF2F7CD2B8B68950025FA4C /* CoreData */,
 				8D0144B12B86891000D9692B /* Fonts */,
 				8DAF67642B8A55890063B14D /* Extension */,
@@ -250,6 +267,7 @@
 		8DAF67452B89F3640063B14D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8DF2F7E62B8B9EB30025FA4C /* SearchLocationModel */,
 				8DAF67462B89F3760063B14D /* WeatherModel */,
 			);
 			path = Models;
@@ -267,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				8DAF67552B89F5770063B14D /* WeatherService.swift */,
+				8DF2F7E42B8B9DF30025FA4C /* SearchLocationService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -300,6 +319,7 @@
 				8DF2F7D22B8B6B3B0025FA4C /* Userdefaults+Extension.swift */,
 				8DF2F7DC2B8B6F530025FA4C /* CoreLocation+Extension.swift */,
 				8DF2F7E22B8B85370025FA4C /* String+Extension.swift */,
+				8DF2F7EE2B8BADBD0025FA4C /* UITextField+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -307,6 +327,7 @@
 		8DAF67692B8B666D0063B14D /* SearchPlaceVC */ = {
 			isa = PBXGroup;
 			children = (
+				8DF2F7E92B8BA8F40025FA4C /* cells */,
 				8DAF676A2B8B66840063B14D /* SearchPlaceInterfaces.swift */,
 				8DAF676B2B8B66840063B14D /* SearchPlacePresenter.swift */,
 				8DAF676C2B8B66840063B14D /* SearchPlaceViewController.swift */,
@@ -325,6 +346,33 @@
 				8DF2F7D92B8B6DD70025FA4C /* Locations+CoreDataProperties.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		8DF2F7E62B8B9EB30025FA4C /* SearchLocationModel */ = {
+			isa = PBXGroup;
+			children = (
+				8DF2F7E72B8B9EC50025FA4C /* SearchLocationModel.swift */,
+			);
+			path = SearchLocationModel;
+			sourceTree = "<group>";
+		};
+		8DF2F7E92B8BA8F40025FA4C /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				8DF2F7EA2B8BA90C0025FA4C /* AdressCell.swift */,
+				8DF2F7EB2B8BA90C0025FA4C /* AdressCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		8DF2F7F02B8BB87B0025FA4C /* CustomProgress */ = {
+			isa = PBXGroup;
+			children = (
+				8DF2F7F12B8BB8880025FA4C /* CustomProgress.swift */,
+				8DF2F7F32B8BB8A30025FA4C /* CustomProgress.xib */,
+				8DF2F7F52B8BB9340025FA4C /* LoadingView.swift */,
+			);
+			path = CustomProgress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +443,7 @@
 				8DF2F7E12B8B80AC0025FA4C /* LocationsCell.xib in Resources */,
 				8D2C2F622B866D1600E3D3D2 /* LaunchScreen.storyboard in Resources */,
 				8D2C2F5F2B866D1600E3D3D2 /* Assets.xcassets in Resources */,
+				8DF2F7F42B8BB8A30025FA4C /* CustomProgress.xib in Resources */,
 				8D0144B02B8687AC00D9692B /* Colors.xcassets in Resources */,
 				8DAF675E2B8A4AED0063B14D /* WeatherCell.xib in Resources */,
 				8D2C2F722B86747E00E3D3D2 /* SplashViewController.xib in Resources */,
@@ -405,6 +454,7 @@
 				8DAF67382B8920610063B14D /* WaetherViewController.xib in Resources */,
 				8DAF67762B8B66840063B14D /* SearchPlaceViewController.xib in Resources */,
 				8D0144BB2B86893600D9692B /* Nunito-Light.ttf in Resources */,
+				8DF2F7ED2B8BA90C0025FA4C /* AdressCell.xib in Resources */,
 				8D0144B82B86893600D9692B /* Nunito-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,18 +476,21 @@
 				8DAF67362B8920610063B14D /* WaetherFormatter.swift in Sources */,
 				8DF2F7E32B8B85370025FA4C /* String+Extension.swift in Sources */,
 				8DAF673B2B8925690063B14D /* SplashFormatter.swift in Sources */,
+				8DF2F7EC2B8BA90C0025FA4C /* AdressCell.swift in Sources */,
 				8D3687A32B88FEB6006F6CB9 /* SplashPresenter.swift in Sources */,
 				8D0144AE2B86876500D9692B /* Gradient+Extension.swift in Sources */,
 				8DF2F7D32B8B6B3B0025FA4C /* Userdefaults+Extension.swift in Sources */,
 				8DAF67372B8920610063B14D /* WaetherInteractor.swift in Sources */,
 				8D3687A92B88FEDE006F6CB9 /* FormatterInterface.swift in Sources */,
 				8DAF67752B8B66840063B14D /* SearchPlaceInteractor.swift in Sources */,
+				8DF2F7EF2B8BADBD0025FA4C /* UITextField+Extension.swift in Sources */,
 				8D3687A72B88FEB6006F6CB9 /* SplashWireframe.swift in Sources */,
 				8DF2F7DB2B8B6DD70025FA4C /* Locations+CoreDataProperties.swift in Sources */,
 				8DAF67482B89F38A0063B14D /* WeatherModel.swift in Sources */,
 				8DAF67732B8B66840063B14D /* SearchPlaceViewController.swift in Sources */,
 				8D0144AC2B8686ED00D9692B /* UIView+Extension.swift in Sources */,
 				8DAF67332B8920610063B14D /* WaetherInterfaces.swift in Sources */,
+				8DF2F7E52B8B9DF30025FA4C /* SearchLocationService.swift in Sources */,
 				8DAF67392B8920610063B14D /* WaetherWireframe.swift in Sources */,
 				8D2C2F562B866D1500E3D3D2 /* AppDelegate.swift in Sources */,
 				8DAF67772B8B66840063B14D /* SearchPlaceWireframe.swift in Sources */,
@@ -449,13 +502,16 @@
 				8DAF67562B89F5770063B14D /* WeatherService.swift in Sources */,
 				8D2C2F582B866D1500E3D3D2 /* SceneDelegate.swift in Sources */,
 				8D36878F2B88DF1D006F6CB9 /* WireframeInterface.swift in Sources */,
+				8DF2F7E82B8B9EC50025FA4C /* SearchLocationModel.swift in Sources */,
 				8D3687912B88DF31006F6CB9 /* ViewInterface.swift in Sources */,
 				8DAF67742B8B66840063B14D /* SearchPlaceFormatter.swift in Sources */,
+				8DF2F7F22B8BB8880025FA4C /* CustomProgress.swift in Sources */,
 				8D3687952B88DF4A006F6CB9 /* PresenterInterface.swift in Sources */,
 				8DAF675D2B8A4AED0063B14D /* WeatherCell.swift in Sources */,
 				8DAF67712B8B66840063B14D /* SearchPlaceInterfaces.swift in Sources */,
 				8D3687A22B88FEB6006F6CB9 /* SplashInterfaces.swift in Sources */,
 				8D3687A42B88FEB6006F6CB9 /* SplashViewController.swift in Sources */,
+				8DF2F7F62B8BB9340025FA4C /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

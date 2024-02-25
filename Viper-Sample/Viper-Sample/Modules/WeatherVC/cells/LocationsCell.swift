@@ -8,6 +8,7 @@
 import UIKit
 
 class LocationsCell: UICollectionViewCell {
+    @IBOutlet var mainView: UIView!
     @IBOutlet var locationName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,7 +18,7 @@ class LocationsCell: UICollectionViewCell {
     override var isSelected: Bool {
         didSet {
             locationName.textColor = isSelected ? .white : UIColor(white: 1, alpha: 0.4)
-            locationName.layer.borderColor = isSelected ? UIColor.white.cgColor : UIColor(white: 1, alpha: 0.4).cgColor
+            mainView.layer.borderColor = isSelected ? UIColor.white.cgColor : UIColor(white: 1, alpha: 0.4).cgColor
         }
     }
 

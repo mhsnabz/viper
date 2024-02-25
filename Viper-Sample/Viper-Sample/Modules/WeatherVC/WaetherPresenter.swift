@@ -63,12 +63,14 @@ extension WaetherPresenter: WeatherPresenterInterface {
     /// - Parameters:
     ///   - lat: The latitude.
     ///   - longLat: The longitude.
-    func requestApi(_ lat: Double, longLat: Double) {
+    ///   - type: The type of metric system to use (e.g., metric or imperial).
+    func requestApi(_ lat: Double, longLat: Double, type: MetricType) {
         // Notify the view that data loading is in progress
         view.isLoading()
 
         // Call the interactor to fetch weather data
-        interactor.getCurrentWeather(lat, longLat) { [unowned self] result in
+        interactor.getCurrentWeather(lat, longLat, type) { [weak self] result in
+            guard let self else { return }
             switch result {
             case let .success(success):
                 // Handle success case
@@ -81,9 +83,10 @@ extension WaetherPresenter: WeatherPresenterInterface {
                 }
                 // Reload the view with the fetched weather data
                 self.view.reloadList(success)
+                view.stopLoading()
             case let .failure(failure):
                 // Handle failure case (e.g., show alert)
-                break
+                view.stopLoading()
             }
         }
 

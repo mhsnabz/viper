@@ -10,4 +10,7 @@ struct ApiConstant {
     static let baseURL = "https://api.openweathermap.org/data/2.5/onecall"
     static let apiKey = "bd5e378503939ddaee76f12ad7a97608"
     static let imageBaseUrl = "https://openweathermap.org/img/wn/%@@2x.png"
+    enum Search {
+        static let baseUrl = "https://nominatim.openstreetmap.org/search"
+    }
 }

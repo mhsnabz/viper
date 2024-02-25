@@ -65,7 +65,7 @@ struct Current: Codable {
 
 struct Weather: Codable {
     let id: Int?
-    let main: Main?
+    let main: String?
     let description: String?
     let icon: String?
 }
